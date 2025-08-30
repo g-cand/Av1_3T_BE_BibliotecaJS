@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Biblioteca Virtual</h1>
+        
+        <div class="menu">
+            <button class="glow-on-hover" type="button" id="gerarRelatorioBtn">Gerar Relatório</button>
+            <button class="glow-on-hover" type="button" id="cadastrarLivroBtn">Cadastrar Livro</button>
+            <button class="glow-on-hover" type="button" id="listarLivrosBtn">Listar Livros</button>
+            <button class="glow-on-hover" type="button" id="calcularTotalBtn">Calcular Total de Livros</button>
+            <button class="glow-on-hover" type="button" id="excluirLivroBtn">Excluir Livro</button>
+        </div>
+
+        <div id="resultados">
+            <p id="mensagem">Escolha uma opção do menu para começar.</p>
+        </div>
+
+        <div id="modalCadastrar" class="modal">
+            <div class="modal-content">
+                <h3>Cadastrar Livro</h3>
+                <input type="text" id="titulo" placeholder="Título">
+                <input type="text" id="autor" placeholder="Autor">
+                <input type="number" id="ano" placeholder="Ano de publicação">
+                <input type="number" id="quantidade" placeholder="Quantidade">
+                <button id="salvarLivroBtn">Salvar</button>
+                <button id="fecharModalBtn">Fechar</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
